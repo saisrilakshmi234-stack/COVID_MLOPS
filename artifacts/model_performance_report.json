@@ -1,0 +1,12 @@
+{
+    "model": "Ridge Regression",
+    "target": "New_cases",
+    "test_samples": 38,
+    "test_features": 167,
+    "metrics": {
+        "MAE": 745.911346507698,
+        "MSE": 2465046.3020484606,
+        "RMSE": 1570.0465923177123,
+        "R2": -0.17476897598447438
+    }
+}

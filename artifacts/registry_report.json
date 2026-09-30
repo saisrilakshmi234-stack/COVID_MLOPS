@@ -1,0 +1,18 @@
+{
+    "registered_model": "COVID_Ridge_Model",
+    "model_description": "Ridge Regression model for predicting COVID-19 New cases using country-wise COVID-19 data.",
+    "model_version": 6,
+    "stage": "Production",
+    "status": "READY",
+    "run_id": "b5b7fc55ede4428eba2558a3aedaf3b6",
+    "source": "models:/m-54fe232bda78437994d3007d443816c0",
+    "version_description": "Latest COVID-19 Ridge Regression model automatically registered and promoted.",
+    "created_timestamp": 1790683641147,
+    "last_updated_timestamp": 1790683646504,
+    "metrics": {
+        "MAE": 745.911346507698,
+        "MSE": 2465046.3020484606,
+        "RMSE": 1570.0465923177123,
+        "R2": -0.17476897598447438
+    }
+}
