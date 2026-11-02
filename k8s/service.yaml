@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: covid-api-service
+spec:
+  type: ClusterIP
+  selector:
+    app: covid-api
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000

@@ -1,0 +1,11 @@
+{
+    "status": "SUCCESS",
+    "model_name": "COVID_Ridge_Model",
+    "model_version": "6",
+    "stage": "Production",
+    "model_exported": true,
+    "preprocessor_exported": true,
+    "metadata_created": true,
+    "sample_predictions_validated": true,
+    "sample_prediction_count": 5
+}

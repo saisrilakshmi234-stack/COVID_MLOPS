@@ -3,6 +3,12 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+.pytest_cache/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
 
 # MLflow local files
 mlflow.db
@@ -11,9 +17,14 @@ mlruns/
 # Jupyter
 .ipynb_checkpoints/
 
-# Logs
+# Logs and temporary files
 logs/
+*.log
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Local datasets and generated outputs
+data/
+outputs/
