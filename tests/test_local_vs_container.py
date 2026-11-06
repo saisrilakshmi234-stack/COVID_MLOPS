@@ -36,7 +36,7 @@ def test_local_vs_container_prediction():
 
     # Get prediction from Docker container
     docker_response = requests.post(
-        "http://localhost:8000/predict",
+        "http://localhost:8002/predict",
         json=sample_input,
         timeout=30
     )

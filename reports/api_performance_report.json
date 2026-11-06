@@ -1,0 +1,23 @@
+{
+  "lab": "Lab 13 - API Performance Testing",
+  "execution_date": "2026-11-06",
+  "endpoint": "/predict",
+  "http_method": "POST",
+  "environment": "Local FastAPI API",
+  "number_of_requests": 10,
+  "average_response_time_ms": 2100.88,
+  "maximum_response_time_ms": 2289.23,
+  "average_response_time_threshold_ms": 5000,
+  "status": "PASSED",
+  "monitoring": {
+    "log_file": "logs/api_predictions.jsonl",
+    "log_verified": true,
+    "recorded_fields": [
+      "timestamp",
+      "request",
+      "prediction",
+      "latency_ms",
+      "status"
+    ]
+  }
+}

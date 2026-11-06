@@ -1,0 +1,27 @@
+{
+  "lab": "Lab 13 - End-to-End Integration",
+  "project": "COVID-19 MLOps",
+  "execution_date": "2026-11-06",
+  "test_framework": "pytest",
+  "total_tests": 6,
+  "passed": 6,
+  "failed": 0,
+  "status": "SUCCESS",
+  "tests": [
+    {"name": "test_home_endpoint", "status": "PASSED"},
+    {"name": "test_health_endpoint", "status": "PASSED"},
+    {"name": "test_api_documentation", "status": "PASSED"},
+    {"name": "test_local_vs_container_prediction", "status": "PASSED"},
+    {"name": "test_api_performance", "status": "PASSED"},
+    {"name": "test_prediction_endpoint", "status": "PASSED"}
+  ],
+  "prediction_consistency": {
+    "local_prediction": 2707.074755102518,
+    "docker_prediction": 2707.074755102518,
+    "absolute_difference": 0.0,
+    "status": "PASSED"
+  },
+  "warnings": [
+    "FastAPI on_event startup handler is deprecated; lifespan handlers are recommended."
+  ]
+}
