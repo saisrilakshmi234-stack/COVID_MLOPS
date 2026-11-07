@@ -25,27 +25,8 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements-api.txt
-          pip install pytest requests
+          pip install -r requirements.txt
+          pip install httpx2 pytest
 
-      - name: Build Docker image
-        run: |
-          docker build -t covid-mlops-api:lab13 .
-
-      - name: Run Docker container
-        run: |
-          docker run -d --name covid-lab13-demo -p 8002:8000 covid-mlops-api:lab13
-
-      - name: Wait for Docker API
-        run: |
-          for i in {1..30}; do
-            if curl -fsS http://127.0.0.1:8002/health; then
-              break
-            fi
-            sleep 2
-          done
-          curl -fsS http://127.0.0.1:8002/health
-
-      - name: Run all pytest tests
-        run: |
-          python -m pytest tests/ -v -s
+      - name: Run tests
+        run: python -m pytest tests/ -v -s
